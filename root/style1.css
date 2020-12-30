@@ -102,8 +102,8 @@ section{
 
 #sec2 .India{
      position: absolute;
- margin-top: 100px;
-  left: 158px;
+ margin-top: 134px;
+  left: 152px;
   width: 55%;
   font-weight: 450;
   font-size: 25px;
@@ -164,3 +164,8 @@ section{
     font-size: 300% 
 }
 
+#sec2 .indimg{
+ position: absolute;
+ margin-top: 100px;
+  right: 100px;
+}
