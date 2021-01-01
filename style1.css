@@ -19,6 +19,7 @@ html{
     background-color: black;
     opacity: 0.6;
     position: fixed;
+    z-index:300;
     
 }
 
@@ -67,12 +68,12 @@ html{
 }
 .types h1{
     text-align: center;
-    float:left;
+    margin:auto;
 }
 .types .image img{
-    width:600px;
+    margin: auto;
     height:auto;
-    object-fit: noness;
+    
 }
 .button ul{
     list-style-type: none;
@@ -116,6 +117,13 @@ section{
   font-family:Courier New;
 }
 
+#sec1 .intro{
+  position: relative;
+  width: 55%;
+  margin-top: 65px;
+  left: 330px;
+}
+
 #sec2 .India{
      position: absolute;
  margin-top: 134px;
@@ -125,11 +133,17 @@ section{
   font-size: 25px;
   font-family:Courier New;
 }
+#sec1 .intro_image{
+   position: absolute;
+ margin-top: 2px;
+  right: 99px;
+}
+
 #sec1 .importance{
      position: absolute;
- margin-top: 267px;
-  right :97px;
-  width: 65%;
+ margin-top: 259px;
+  right :90px;
+  width: 45%;
   font-weight: 450;
   font-family:Courier New;
   text-align: right;
@@ -161,9 +175,9 @@ section{
 #sec1 .content{
      float: left;
    position: absolute;
- margin-top: 48px;
-  left: 125px;
-  width: 65%;
+ margin-top: 30px;
+  left: 90px;
+  width: 50%;
   font-weight: 450;
   font-family:Courier New;
 }
@@ -203,4 +217,10 @@ section{
     position:relative;
     bottom:250px;
     right:20px;
+}
+
+#sec4 .Benefits{
+  margin:auto;
+  width: 60%;
+  
 }
