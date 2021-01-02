@@ -2,9 +2,10 @@
 html, body
 {
 	height: 100%;
-	scroll-behavior: smooth
 }
-
+html{
+	scroll-behavior: smooth;
+}
 body
 {
 	margin: 0px;
@@ -14,7 +15,7 @@ body
 	font-size: 11pt;
 	font-weight: 300;
 	color: #6c6c6c;
-	transition: 0s linear;
+	
 }
 
 h1, h2, h3
@@ -64,22 +65,25 @@ a:hover
 	background-image: url("images/pic1.jpg");
 	min-height: 400px;
 	width:100%;
-	transition: 0s linear;
+	
+	
+
 }
 .pmg2{
 	background-image: url("images/pic2.jpg");
 	min-height: 400px;
 	width:100%;
-	transition: 0s linear;
+	
+	
 }
 .pmg1, .pmg2{
 	position:relative;
-	opacity: 0.70;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 
+	
 }
 /*********************************************************************************/
 /* Image Style                                                                   */
