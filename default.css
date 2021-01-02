@@ -2,6 +2,7 @@
 html, body
 {
 	height: 100%;
+	scroll-behavior: smooth
 }
 
 body
@@ -12,7 +13,8 @@ body
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 11pt;
 	font-weight: 300;
-	color: #6c6c6c
+	color: #6c6c6c;
+	transition: 0s linear;
 }
 
 h1, h2, h3
@@ -58,7 +60,27 @@ a:hover
 	margin: 0px auto;
 	width: 1200px;
 }
+.pmg1{
+	background-image: url("images/pic1.jpg");
+	min-height: 400px;
+	width:100%;
+	transition: 0s linear;
+}
+.pmg2{
+	background-image: url("images/pic2.jpg");
+	min-height: 400px;
+	width:100%;
+	transition: 0s linear;
+}
+.pmg1, .pmg2{
+	position:relative;
+	opacity: 0.70;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 
+}
 /*********************************************************************************/
 /* Image Style                                                                   */
 /*********************************************************************************/
@@ -302,39 +324,26 @@ ul.contact li a.icon-rss:before
 /* Button Style                                                                  */
 /*********************************************************************************/
 
-	.button
-{
-	display: inline-block;
-	padding: 1.3em 3em;
-	background: #8dc63f;
-	-moz-transition: opacity 0.25s ease-in-out;
-	-webkit-transition: opacity 0.25s ease-in-out;
-	-o-transition: opacity 0.25s ease-in-out;
-	-ms-transition: opacity 0.25s ease-in-out;
-	transition: opacity 0.25s ease-in-out;
-	letter-spacing: 0.20em;
+.btn ul li a {
 	text-decoration: none;
-	text-transform: uppercase;
-	font-weight: 600;
-	color: #FFF;
+    padding: 5px 20px;
+    border:1px solid white;
 }
-
-.button:hover
-{
-	background: #86bd3b;
+.btn ul li a:hover{
+	background-color:#1e7d0f ;
+	transition:0.8s ease ;
 }
-
-.button:active
-{
+#menu ul li a{
+	text-decoration: none;
+	color:grey;
+    padding: 5px 20px;
+    border:1px solid transparent;
 }
-
-.button-big
-{
-	padding: 1.6em 4em;
-	font-size: 1.4em;
-	font-weight: 900;
+#menu ul li a:hover{
+	background-color: white;
+	color:#000;
+	transition: 0.8s ease;
 }
-
 /*********************************************************************************/
 /* Heading Titles                                                                */
 /*********************************************************************************/
@@ -635,7 +644,7 @@ ul.contact li a.icon-rss:before
 	overflow: hidden;
 	padding: 5em 0em;
 	background: #FFF;
-	text-align: center;
+	
 	
 
 }
@@ -647,33 +656,37 @@ ul.contact li a.icon-rss:before
 
 #featured .main-title
 {
-	margin-top: 1	px;
+	margin-top: 1px;
 	margin-bottom: 4em;
+	font-weight: 400;
+	text-align: center;
+}
+
+#featured .starting{
+	margin-bottom: 4em;
+	font-weight: 400;
 	
 }
 
-#featured .main-title h2
-{
-	font-size: 4em;
+#featured .starting h1{
+	text-align: center;
+	font-size: 40px;
+
 }
 
-#featured .main-title .byline
-{
-	font-size: 2em;
+.impact{
+	position: relative;
+	top: 35px;
+	left: 150px;
 }
 
-#featured-wrapper .fa
-{
-	display: inline-block;
-	margin-bottom: 1em;
-	width: 3em;
-	height: 3em;
-	line-height: 3em;
-	font-size: 4em;
-	color: #8dc63f;
-	border: 1px solid #86bd3b;
-	border-radius: 50%;
+.para{
+	position: relative;
+	top: 70px;
 }
+
+
+
 
 .column1,  .column2,  .column3,  .column4
 {
